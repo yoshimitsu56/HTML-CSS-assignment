@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 5px 10px rgba(136, 136, 136, 0.25);
+}
+.header-logo{
+    float: left;
+    width: auto;
+    height: 20px;
+    padding: 30px 60px 40px 40px;
+}
+.header li{
+    list-style: none;
+    float: right;
+    font-size: 11px;
+    padding: 25px;
+}
+.counseling{
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    border-radius: 40px;
+    display: block;
+    text-align: center;
+    padding: 10px 25px;
+}
+.training{
+    text-decoration: none;
+    color: #444444;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+.recruit{
+    text-decoration: none;
+    color: #444444;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+.faq{
+    text-decoration: none;
+    color: #444444;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    
+}
+.interview{
+    text-decoration: none;
+    color: #444444;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+.content{
+    text-decoration: none;
+    color: #444444;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+.main{
+    position: relative;
+}
+.main-text-hutoji{
+    font-size: 36px;
+    font-family: "late",sans-serif;
+    font-weight: 800;
+}
+.main-text-counseling{
+    color: white;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    padding: 20px ;
+    font-size: 16px;
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.main-text-bikou{
+    font-size: 9px;
+    margin-top: 20px;
+}
+.main img {
+    position: absolute;
+    
+}
+
+.uesannkaku{
+    height: 800px;
+    left: 0;
+    top: -500px;
+    z-index: -1;
+}
+.sitasannkaku{
+    height: 700px;
+    right: -400px;
+    z-index: -1;
+}
+.daenn {
+    height: 500px;
+    top: 160px;
+    left: -50px;
+    z-index: -1;
+}
+.hito{
+    height: 600px;
+    top: -200p;
+    right: 0px;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1079px){
+    .header-list{
+        display:  none;
+    }
+    .header-hamburger{
+        display: block;
+        width: 25px;
+        height: 40px;       
+        z-index: 2;
+        position: fixed;
+        right: 25px;
+        top: 30px;
+    }
+    .hamburger-linetop{
+        display: block;
+        height: 2px;
+        background-color: #444444;
+        border-radius: 10px;
+    }
+    .hamburger-linemedium{
+        display: block;
+        height: 2px;
+        background-color: #444444;
+        border-radius: 10px;
+        top: 20px;
+        margin-top: 7px;
+    }
+    .hamburger-linebottom{
+        display: block;
+        height: 2px;
+        background-color: #444444;
+        border-radius: 10px;
+        margin-top: 7px;
+        
+    }
+}
+
+@media only screen and (max-width:766px){
+    .main-text {
+        position: absolute;
+        top: 450px;
+        z-index: 1;
+        width: 420px;
+        left: 50px;
+    }
+    .main-text-hutoji{
+        font-size: 20px;
+    }
+    .maruigazou{
+        width: 100px;
+        height: 100px;
+        top: 420px;
+        z-index: 1;
+    }
+    .daenn{
+        height: 400px;
+        top: 80px;
+        
+    }
+    .hito{
+        height: 500px;
+    }
+
+    
+    .sitasannkaku{
+        display :none;
+    }
+}
+@media only screen and (min-width:767px) and  (max-width: 1380px){
+    .main-text {
+        position: absolute;
+        padding-top: 260px;
+        left: 50px;
+        z-index: 1;
+        width: 420px;
+    }
+    .maruigazou{
+        width: 200px;
+        height: 200px;
+        padding-top: 140px;
+        left: 430px;
+        z-index: 1;
+    }
+}
+@media only screen and (min-width: 1381px) {
+    .main-text {
+        position: absolute;
+        padding-top: 260px;
+        right: 950px;
+        z-index: 1;
+        width: 420px;
+    }
+    .maruigazou{
+        width: 200px;
+        height: 200px;
+        padding-top: 140px;
+        right: 800px;
+        z-index: 1;
+    }
+}
